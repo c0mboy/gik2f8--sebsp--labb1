@@ -18,6 +18,8 @@ searchField.addEventListener('keyup', (e) =>
   )
 );
 
+
+
 function renderBookList(bookList) {
   const existingElement = document.querySelector('.book-list');
 
@@ -25,4 +27,11 @@ function renderBookList(bookList) {
 
   existingElement && root.removeChild(existingElement);
   bookList.length > 0 && searchField.value && root.insertAdjacentHTML('beforeend', BookList(bookList));
+}
+
+function renderBookItem(bookList){
+  console.log("Inserting ")
+  const insert = document.getElementById('insert');
+  let minhtml = BookInfo(bookList)
+  insert.insertAdjacentHTML('afterbegin', minhtml)
 }
