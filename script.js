@@ -22,16 +22,46 @@ searchField.addEventListener('keyup', (e) =>
 
 function renderBookList(bookList) {
   const existingElement = document.querySelector('.book-list');
-
   const root = document.getElementById('root');
 
   existingElement && root.removeChild(existingElement);
   bookList.length > 0 && searchField.value && root.insertAdjacentHTML('beforeend', BookList(bookList));
-}
+  
+  
+  document.addEventListener("mouseover", myFunction);
+  
+  function myFunction() {
+    console.log("heheheh")
+    document.getElementById('pointer').innerHTML = "Moused over!"
+    //const insert = document.getElementById('insert');
+  }
 
-function renderBookItem(bookList){
-  console.log("Inserting ")
-  const insert = document.getElementById('insert');
-  let minhtml = BookInfo(bookList)
-  insert.insertAdjacentHTML('afterbegin', minhtml)
+  
 }
+// document.querySelector('.pointer').addEventListener("mouseover", mouseOver);
+// document.querySelector('.pointer').addEventListener("mouseout", mouseOut);
+
+// function mouseOver() {
+  //   document.getElementById("demo").style.color = "red";
+  //   console.log("hey")
+  // }
+  
+  // function mouseOut() {
+    //   document.getElementById("demo").style.color = "black";
+    //   console.log("då")
+    // }
+    
+    
+// function renderBookItem(book){
+//   console.log("hej", book)
+//   const existingElement = document.querySelector('.book-info');
+//   const insert = document.getElementById('insert');
+  
+//   existingElement && insert.removeChild(existingElement);
+
+//   // let minhtml = BookInfoTest(book)
+//   // insert.insertAdjacentHTML('afterbegin', minhtml)
+// }
+
+
+
