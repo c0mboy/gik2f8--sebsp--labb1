@@ -1,22 +1,22 @@
-const BookInfo = (book) => {
-    let html = `
-            <div class="rounded-md border-2 border-blue-400 bg-white w-full mx-auto w-40">
-            <div class="">
-            <div class="">
-                <div class="">
-                <img src=    "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fstephenking.com%2Fpromo%2Fdark-tower-2016-collection%2Fimages%2Fthe_gunslinger.jpg"/>
-                <div class="">
-                    <span class="">Author: ${book.author} </span>
-                    <span class="">Title: ${book.title}</span>
-                    <span class="">Pages: ${book.pages}</span>
-                    <span class="">Release Date: ${book.releaseDate}</span
-                </div> 
-                </div>
-            </div>
-            </div>
-        </div>`;
-        return html;
-  };
+// const BookInfo = (book) => {
+//     let html = `
+//             <div class="rounded-md border-2 border-blue-400 bg-white w-full mx-auto w-40">
+//             <div class="">
+//             <div class="">
+//                 <div class="">
+//                 <img src=    "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fstephenking.com%2Fpromo%2Fdark-tower-2016-collection%2Fimages%2Fthe_gunslinger.jpg"/>
+//                 <div class="">
+//                     <span class="">Author: ${book.author} </span>
+//                     <span class="">Title: ${book.title}</span>
+//                     <span class="">Pages: ${book.pages}</span>
+//                     <span class="">Release Date: ${book.releaseDate}</span
+//                 </div> 
+//                 </div>
+//             </div>
+//             </div>
+//         </div>`;
+//         return html;
+//   };
   
 const BookInfoTest = (book) => {
     let html = `
@@ -35,13 +35,13 @@ const BookInfoTest = (book) => {
        return html;
 };
 
-const BookInfoTestLu = (book) => {
-    let html = 
-    `<li
-    class="book-list__item mb-2 mx-2 last:mb-0 p-3 
-    text-indigo-900 last:border-b-0 border-b 
-    border-indigo-700 cursor-pointer">
-  ${book.author} - ${book.title}    
-  </li>`;
-       return html;
-};
+// const BookInfoTestLu = (book) => {
+//     let html = 
+//     `<li
+//     class="book-list__item mb-2 mx-2 last:mb-0 p-3 
+//     text-indigo-900 last:border-b-0 border-b 
+//     border-indigo-700 cursor-pointer">
+//   ${book.author} - ${book.title}    
+//   </li>`;
+//        return html;
+// };
