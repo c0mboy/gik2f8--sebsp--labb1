@@ -12,7 +12,8 @@ window.addEventListener('load', () => {
   getBook().then((apiBooksOver) => (bookOver = apiBooksOver));
 });
 
-console.log("hey",getBook());
+console.log("getAll",getAll());
+console.log("getBook",getBook());
 
 searchField.addEventListener('keyup', (e) =>
   renderBookList(
@@ -49,7 +50,7 @@ function renderBookList(bookList) {
 
 function renderBookItem(bookList){
   
-  const insert = document.querySelector('.book-list'); //
+  const insert = document.querySelector('.book-list'); // 
   let minhtml = BookInfoTest(bookList) //Hämtar Html från BookInfo
 
   insert.insertAdjacentHTML('afterbegin', minhtml) //lägger in den efter hmtl=minhtml after begining

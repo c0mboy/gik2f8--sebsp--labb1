@@ -15,3 +15,4 @@ async function getBook() {
 
   return result;
 }
+// läsa https://raddy.dev/blog/javascript-async-await-fetch-and-display-data-from-api/
