@@ -6,6 +6,7 @@ window.addEventListener('load', () => {
   getAll().then((apiBooks) => (bookList = apiBooks));
 });
 
+//------------------------------
 let bookOver = [];
 
 window.addEventListener('load', () => {
@@ -14,6 +15,12 @@ window.addEventListener('load', () => {
 
 console.log("getAll",getAll());
 console.log("getBook",getBook());
+
+const promise = getBook();
+promise.then((value) => console.log(value[1]));
+//-------------------------------
+
+
 
 searchField.addEventListener('keyup', (e) =>
   renderBookList(
@@ -49,7 +56,7 @@ function renderBookList(bookList) {
 };
 
 function renderBookItem(bookList){
-  
+  promise.then((value) => console.log(value[1]));
   const insert = document.querySelector('.book-list'); // 
   let minhtml = BookInfoTest(bookList) //Hämtar Html från BookInfo
 
