@@ -7,9 +7,18 @@ async function getAll() {
 
   return result;
 }
+//+`/${bookId}`
 
-async function getBook() {
+async function getBooktest() {
   const result = await fetch(url)
+    .then((result) => result.json())
+    .catch((e) => e);
+
+  return result;
+}
+
+async function getBook(id) {
+  const result = await fetch(url+"/"+id)
     .then((result) => result.json())
     .catch((e) => e);
 
