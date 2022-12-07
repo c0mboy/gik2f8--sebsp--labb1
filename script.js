@@ -35,7 +35,7 @@ function renderBookList(bookList) {
       var e = window.event;
       let x_pos = e.clientX +40;
       let y_pos = e.clientY -70;
-      const existingElementBox = `<div id="book-list__card" class="book-info position: absolute" style="position: absolute; top: ${y_pos}px; left:${x_pos}px;"></div>`;
+      const existingElementBox = `<div id="book-card" class="book-info position: absolute" style="position: absolute; top: ${y_pos}px; left:${x_pos}px;"></div>`;
       root.insertAdjacentHTML('afterbegin', existingElementBox);
       //console.log("Hämtar id", idbook)
       //------Hämtar tbx en specifik bok från API----------
@@ -44,8 +44,10 @@ function renderBookList(bookList) {
       // Skickar ut den som en specfik book med array till BookInfo 
       });
       elements[i].addEventListener('mouseout', (e)=> {
-        //console.log("Hejdå")
+
         const existingElementBox = document.querySelector('.book-info'); //visar vad book-info är 
+        //const existingElementBox = document.getElementById('book-card'); //visar vad book-info är 
+
         existingElementBox && existingElementBox.remove() // Om det finns en book-info ta bort den
       });
   }
@@ -53,9 +55,12 @@ function renderBookList(bookList) {
 
 function renderBookItem(bookList){
   var e = window.event;
-  const insert = document.getElementById('book-list__card'); // hämtar html från booklist.js
-  let minhtml = BookInfoTest(bookList) //Hämtar Html från BookInfo.js
-  insert.insertAdjacentHTML('afterbegin', minhtml) //lägger in den efter hmtl=minhtml after begining
+
+  const insertBooklist = document.querySelector('.book-info'); // hämtar html från booklist.js
+  //const insertBooklist = document.getElementById('book-card'); // hämtar html från booklist.js
+
+  let minhtml = BookInfo(bookList) //Hämtar Html från BookInfo.js
+  insertBooklist.insertAdjacentHTML('afterbegin', minhtml) //lägger in den efter hmtl=minhtml after begining
 }
 
 

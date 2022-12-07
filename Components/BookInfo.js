@@ -1,4 +1,4 @@
-const BookInfoTest = (book) => {
+const BookInfo = (book) => {
     let html = 
         `    
         <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg bg-gradient-to-tr from-sky-300 to-fuchsia-500">
