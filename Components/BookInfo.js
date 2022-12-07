@@ -11,7 +11,7 @@ const BookInfoTest = (book) => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mi sem, dictum quis euismod nec,
             rutrum a sem. Praesent in interdum ex. Aliquam dui purus, volutpat sed consectetur sollicitudin,
             interdum id diam. Donec nisl quam, faucibus et bibendum vitae, posuere sed risus.</p>
-            <p class="text-gray-700 text-xs">Release Pages: ${book.pages}</p>
+            <p class="text-gray-700 text-xs">Pages: ${book.pages}</p>
             <p class="text-gray-600 text-xs">Release Date: ${book.releaseDate}</p>
             </div>
         </div>
