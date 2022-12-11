@@ -1,6 +1,5 @@
 const BookInfo = (book) => {
-    let html = 
-        `    
+  let html = `    
         <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg bg-gradient-to-tr from-sky-300 to-fuchsia-500">
             <img class=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg" src="${book.coverImage}"/ alt="" />
             <div class="p-6 flex flex-col justify-start">
@@ -16,5 +15,5 @@ const BookInfo = (book) => {
             </div>
         </div>
         `;
-       return html;
+  return html;
 };
